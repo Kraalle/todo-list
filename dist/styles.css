@@ -1,0 +1,87 @@
+Reset default margin and padding
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Main container styles */
+.todo-app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title styles */
+.todo-app__title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Content styles */
+.todo-app__content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form section styles */
+.todo-form {
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+#todoForm {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+/* Input and select styles */
+input[type="text"],
+input[type="date"],
+select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styles */
+button  {
+    padding: 10px 0; /* Adjust padding */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button stretch across */
+}
+
+.add-todo-button:hover {
+    background-color: #0056b3;
+}
+
+/* Todo list section styles */
+.todo-list {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* Todo list title styles */
+.todo-list__title {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+

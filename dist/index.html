@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="todo-app">
+        <h1 class="todo-app__title">Todo Web App</h1>
+        <div class="todo-app__content">
+            <div class="todo-form" id="formSection">
+                <button class="add-todo-button">Add New Todo</button>
+                <form id="todoForm">
+                    <label for="todoTitle">Title:</label>
+                    <input type="text" id="todoTitle" name="todoTitle" required>
+            
+                    <label for="todoDescription">Description:</label>
+                    <input type="text" id="todoDescription" name="todoDescription" required>
+            
+                    <label for="todoDueDate">Due Date:</label>
+                    <input type="date" id="todoDueDate" name="todoDueDate" required>
+            
+                    <label for="todoPriority">Priority:</label>
+                    <select name="todoPriority" id="todoPriority" required>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select><br>
+            
+                    <button id='submit-todo' type="submit">Add Todo</button>
+                </form>
+            </div>
+            <table class="todo-list">
+                <h1 class="todo-list__title">Current Todo's</h1>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Due Date</th>
+                        <th>Priority</th>
+                        <th>Completed</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
